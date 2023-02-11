@@ -1,7 +1,7 @@
 from selenium import webdriver
 
 driver = webdriver.Safari(desired_capabilities={'browserName': 'Safari Technology Preview', 'platformName': 'mac'}, executable_path='/Applications/Safari Technology Preview.app/Contents/MacOS/safaridriver')
-driver.get("https://example.com")
+driver.get("https://webkit.org/")
 
 resp = driver.execute_async_script('''
     let done = arguments[arguments.length - 1];

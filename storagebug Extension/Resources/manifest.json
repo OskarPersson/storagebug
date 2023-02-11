@@ -20,14 +20,13 @@
 
     "content_scripts": [{
         "js": [ "content.js" ],
-        "matches": [ "*://example.com/*" ]
+        "matches": [ "*://example.com/*", "*://webkit.org/*" ]
     }],
     
     "externally_connectable": {
-      "ids": ["*"],
-      "matches": ["*://example.com/*"]
+      "ids": [ "*" ],
+      "matches": [ "*://example.com/*", "*://webkit.org/*" ]
     },
-
 
     "action": {
         "default_popup": "popup.html",
@@ -41,5 +40,5 @@
         }
     },
 
-    "permissions": [ "storage" ]
+    "permissions": [ "storage", "tabs" ]
 }
